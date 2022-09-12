@@ -1,10 +1,5 @@
 export const navitems = [
     {
-        title:"Ege Durmaz",
-        url:"#",
-        classN:"nav-link"
-    },
-    {
         title:"About Me",
         url:"#",
         classN:"nav-link"

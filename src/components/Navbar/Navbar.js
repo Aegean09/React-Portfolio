@@ -1,13 +1,24 @@
 import React, { Component } from "react";
 import { navitems } from "./NavItems";
+import "./Navbar.css";
 
 class Navbar extends Component {
+  state = {
+    clicked: false,
+  };
+
+  handleClick= ()=>{
+    this.setState({clicked: !this.state.clicked})
+  }
+
   render() {
     return (
       <nav className="navbar-items">
-        <h1 className="navbar-logo">React</h1>
-        <div className="menu-icon"></div>
-        <ul>
+        <h1 className="navbar-logo">Ege Durmaz</h1>
+        <div className="menu-icon" onClick={this.handleClick}>
+          <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        </div>
+        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           {navitems.map((item, idx) => {
             return (
               <li key={idx}>

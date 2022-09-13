@@ -7,22 +7,34 @@ class Navbar extends Component {
     clicked: false,
   };
 
-  handleClick= ()=>{
-    this.setState({clicked: !this.state.clicked})
-  }
+
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
+  
+  handleItemClass = (item) => {
+    return item.classNot;
+  };
 
   render() {
     return (
       <nav className="navbar-items">
         <h1 className="navbar-logo">Ege Durmaz</h1>
         <div className="menu-icon" onClick={this.handleClick}>
-          <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+          <i
+            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+          ></i>
         </div>
-        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {navitems.map((item, idx) => {
             return (
               <li key={idx}>
-                <a className={item.classN} href={item.url}>
+                <a
+                  className={
+                    this.state.clicked ? item.classN : this.handleItemClass(item)
+                  }
+                  href={item.url}
+                >
                   {item.title}
                 </a>
               </li>

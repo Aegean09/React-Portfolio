@@ -9,13 +9,6 @@
   font-size: 1.2rem;
 }
 
-.navbar-logo {
-  color: #333333;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
@@ -27,27 +20,99 @@
   margin: 2rem;
 }
 
+.menu-icon{
+  display: none;
+}
+
+.navbar-logo {
+  color: #333333;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 .nav-link {
-    transition: all 0.7s;
-    color: #888888a4;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+  transition: all 0.7s;
+  color: #888888a4;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
 .nav-link:hover {
-    color: #333333;
-    border-radius: 4px;
-    transition: all 1s ease-out;
+  color: #333333;
+  border-radius: 4px;
+  transition: all 1s ease-out;
 }
 
 .fa-bars{
     color: #333333;
 }
 
-.nav-link-mobile{
-    display: none;
-}
+@media screen and (max-width: 960px) {
+  .navbar-items{
+    position: relative;
+  }
 
-.menu-icon{
+  .nav-menu{
+    grid-gap: 0;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    top: 80px;
+    position: absolute;
+    right: -100%;
+    opacity: 1;
+    transition: all 0.5s ease-out; 
+  }
+  
+  .nav-link-notactive{
     display: none;
+  }
+  
+  .nav-menu.active{
+    box-shadow: 0 10px 10px 4px #88888839;
+    display: flex;
+    visibility:visible;
+    background-color: #F4ECE6;
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .menu-icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .navbar-logo {
+		position: absolute;
+		align-self: center;
+		left: 0;
+	}
+
+  .nav-link{
+    color: #33333350;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-link:hover{
+    color: #333333;
+    background-color: #dfd8d2;
+    border-radius: 0;
+  }
+
+  .fa-times{
+    color: #333333;
+    font-size: 2rem;
+  }
 }

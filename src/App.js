@@ -1,11 +1,17 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import About from "./Pages/About/About";
+import Proje from "./Pages/Proje/Proje";
+import Resume from "./Pages/Resume/Resume";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+        <Navbar />
+        <About />
+        <Resume />
+        <Proje />
     </div>
   );
 }

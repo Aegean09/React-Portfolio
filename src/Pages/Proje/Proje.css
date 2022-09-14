@@ -1,0 +1,11 @@
+.proje {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: linear-gradient(90deg, #E6DACE 39%, #FFFFFF 40%); */
+    width: 100%;
+    padding: 2%;
+    background: blue;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    z-index: 0;
+  }

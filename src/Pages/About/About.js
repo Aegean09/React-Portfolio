@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "./About.css";
-import Card from "../../components/infoCard/infoCard";
+import InfoCard from "../../components/infoCard/infoCard";
+import InfoText from "../../components/infoText/infoText";
 
 class About extends Component {
   render() {
     return (
       <div className="about">
-        <Card className="info-card" />
+        <InfoCard className="info-card" />
+        <InfoText className="info-text" />
       </div>
     );
   }

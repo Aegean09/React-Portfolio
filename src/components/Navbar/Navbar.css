@@ -1,4 +1,9 @@
-.navbar-items {
+.navbar {
+  top:0;
+  margin: 0  0 0 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
   background: white;
   height: 80px;
   border-bottom: 10px;

@@ -12,8 +12,8 @@ class infoCard extends Component {
           <div className="border"></div>
           <h2 className="card-title">Junior Frontend Developer</h2>
         </div>
-        <div class="card-footer">
-          <div class="card-footer-items">
+        <div className="card-footer">
+          <div className="card-footer-items">
             <a
               className="insta"
               href="https://www.instagram.com/ege_durmz/"

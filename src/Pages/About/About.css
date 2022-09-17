@@ -1,4 +1,5 @@
 .about {
+  height: 100vh;
   background: linear-gradient(90deg, #E6DACE 39%, #FFFFFF 40%);
   display: flex;
   justify-content: center;

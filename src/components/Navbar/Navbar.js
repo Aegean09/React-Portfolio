@@ -15,6 +15,32 @@ class Navbar extends Component {
     return item.classNot;
   };
 
+  scrollToAbout = () => {
+    const element = document.querySelector(".about");
+    if(element){
+        element.scrollIntoView({
+            behavior:"smooth",
+        })
+    }
+  };
+  scrollToResume = () => {
+    const element = document.querySelector(".resume");
+    if(element){
+        element.scrollIntoView({
+            behavior:"smooth",
+        })
+    }
+  };
+  scrollToProje = () => {
+    const element = document.querySelector(".proje");
+    if(element){
+        element.scrollIntoView({
+            behavior:"smooth",
+        })
+    }
+  };
+
+
   render() {
     return (
       <nav className="navbar">
@@ -27,15 +53,19 @@ class Navbar extends Component {
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {navitems.map((item, idx) => {
             return (
-              <li key={idx}>
-                <a
+              <li className="navbar-buttons" key={idx}>
+                <div
                   className={
-                    this.state.clicked ? item.classN : this.handleItemClass(item)
+                    this.state.clicked ? item.classN : this.handleItemClass(item.id)
                   }
-                  href={item.url}
+                  onClick={
+                    item.id === "about" ? this.scrollToAbout :
+                    item.id === "resume" ? this.scrollToResume :
+                    this.scrollToProje
+                }
                 >
                   {item.title}
-                </a>
+                </div>
               </li>
             );
           })}

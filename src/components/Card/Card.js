@@ -11,7 +11,7 @@ class Card extends Component {
           <button className="button">Download CV</button>
           {cardItems.map((item, idx) => {           
               return (
-                <div className="cards">
+                <div key={idx} className="cards">
                   <div className="card-left">
                     <h1>{item.type==="experience" ? item.company : item.school}</h1>
                     <h2>{item.date}</h2>

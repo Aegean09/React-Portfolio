@@ -1,19 +1,19 @@
 export const navitems = [
     {
         title:"About Me",
-        url:"#",
+        id:"about",
         classN:"nav-link",
         classNot:"nav-link-notactive"
     },
     {
         title:"Resume",
-        url:"#",
+        id:"resume",
         classN:"nav-link",
         classNot:"nav-link-notactive"
     },
     {
         title:"Projects",
-        url:"#",
+        id:"project",
         classN:"nav-link",
         classNot:"nav-link-notactive"
     }

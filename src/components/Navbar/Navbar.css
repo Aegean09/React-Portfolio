@@ -1,6 +1,6 @@
 .navbar {
-  top:0;
-  margin: 0  0 0 0;
+  top: 0;
+  margin: 0 0 0 0;
   position: fixed;
   width: 100%;
   z-index: 10000;
@@ -25,10 +25,20 @@
   margin: 2rem;
 }
 
-.menu-icon{
+.menu-icon {
   display: none;
 }
 
+.navbar-buttons {
+  transition: all 0.7s;
+  color: #888888a4;
+  padding: 0.5rem 1rem;
+}
+.navbar-buttons:hover {
+  color: #333333;
+  border-radius: 4px;
+  transition: all 1s ease-out;
+}
 .navbar-logo {
   color: #333333;
   justify-self: start;
@@ -37,28 +47,19 @@
 }
 
 .nav-link {
-  transition: all 0.7s;
-  color: #888888a4;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
-.nav-link:hover {
+.fa-bars {
   color: #333333;
-  border-radius: 4px;
-  transition: all 1s ease-out;
-}
-
-.fa-bars{
-    color: #333333;
 }
 
 @media screen and (max-width: 960px) {
-  .navbar-items{
+  .navbar-items {
     position: relative;
   }
 
-  .nav-menu{
+  .nav-menu {
     grid-gap: 0;
     display: flex;
     margin: 0;
@@ -68,25 +69,25 @@
     position: absolute;
     right: -100%;
     opacity: 1;
-    transition: all 0.5s ease-out; 
+    transition: all 0.5s ease-out;
   }
-  
-  .nav-link-notactive{
+
+  .nav-link-notactive {
     display: none;
   }
-  
-  .nav-menu.active{
+
+  .nav-menu.active {
     box-shadow: 0 10px 10px 4px #88888839;
     display: flex;
-    visibility:visible;
-    background-color: #F4ECE6;
+    visibility: visible;
+    background-color: #f4ece6;
     right: 0;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
 
-  .menu-icon{
+  .menu-icon {
     display: block;
     position: absolute;
     top: 0;
@@ -97,12 +98,12 @@
   }
 
   .navbar-logo {
-		position: absolute;
-		align-self: center;
-		left: 0;
-	}
+    position: absolute;
+    align-self: center;
+    left: 0;
+  }
 
-  .nav-link{
+  .nav-link {
     color: #33333350;
     font-weight: 600;
     text-align: center;
@@ -110,13 +111,13 @@
     width: 100%;
     display: table;
   }
-  .nav-link:hover{
+  .nav-link:hover {
     color: #333333;
     background-color: #dfd8d2;
     border-radius: 0;
   }
 
-  .fa-times{
+  .fa-times {
     color: #333333;
     font-size: 2rem;
   }

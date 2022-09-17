@@ -1,0 +1,91 @@
+.section {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.resume-sections {
+    color: #888888;
+  margin: 100px 0 -20px 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #c60021;
+  border: 2px solid #c60021;
+  color: #fff;
+  padding: 5px;
+  margin: 100px 0 -20px 186px;
+  width: 200px;
+  height: 34px;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.button:hover {
+  border: 2px solid #000;
+  color: #000;
+  background-color: #f4ece6;
+}
+
+.cards {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 50px auto -20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  border: none;
+  box-shadow: 0 2px 18px 0 #888888;
+  z-index: 1;
+  height: 370px;
+  width: 725px;
+  background-color: #fff;
+}
+
+.card-left {
+  padding: 40px 40px 0 40px;
+}
+.card-right {
+  padding: 40px 40px 0 40px;
+  border-left: 2px dotted #c60021;
+}
+
+.cards h3 {
+  font-size: 15px;
+  margin-bottom: -15px;
+  font-weight: 600;
+  color: #777;
+}
+.cards h2 {
+  margin-top: 15px;
+  margin-bottom: -5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+.cards h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #000;
+}
+
+.resume-info {
+  font-size: 20px;
+}
+.gittigidiyor {
+  height: 50px;
+}
+.trendyol {
+  height: 50px;
+}
+.kariyernet {
+  height: 50px;
+}
+.ytu {
+  height: 150px;
+}
+.vut {
+  height: 100px;
+}

@@ -3,5 +3,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.navbar-t{
+  top:0;
+  margin: 0 0 0 0;
+  position: fixed;
+}
+
 /* html{
 } */

@@ -4,7 +4,7 @@ import "./infoText.css";
 class infoText extends Component {
   render() {
     return (
-      <div class="info">
+      <div className="info">
         <h1>Hello!</h1>
         <h2>I'm Ege Durmaz</h2>
         <a className="info-resume" href="pages/resume.html">

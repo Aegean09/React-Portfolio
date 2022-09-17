@@ -8,7 +8,7 @@ import Resume from "./Pages/Resume/Resume";
 function App() {
   return (
     <div className="App">
-        <Navbar />
+        <Navbar className="navbar-t" />
         <About />
         <Resume />
         <Proje />

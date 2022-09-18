@@ -59,6 +59,9 @@
     position: relative;
   }
 
+  ul{
+    padding: 0;
+  }
   .nav-menu {
     grid-gap: 0;
     display: flex;
@@ -102,7 +105,11 @@
     align-self: center;
     left: 0;
   }
-
+  .navbar-buttons {
+    transition: all 0.7s;
+    color: #888888a4;
+    padding: 0.5rem 1rem;
+  }
   .nav-link {
     color: #33333350;
     font-weight: 600;

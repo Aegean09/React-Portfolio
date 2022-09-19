@@ -10,7 +10,7 @@ export const resumeItems = [
     location: "Istanbul-Turkey",
     logo: "",
     description:
-      "• Developed a project from scratch to preprod with 5 other interns in the first month. • Taken part in the company’s web team meanwhile developing the intern project in the second month.",
+      "Developed a project from scratch to preprod with 5 other interns in the first month. Taken part in the company’s web team meanwhile developing the intern project in the second month.",
   },
   {
     flag: false,

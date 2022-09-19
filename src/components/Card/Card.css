@@ -4,7 +4,7 @@
   grid-template-columns: auto auto;
 }
 .resume-sections {
-    color: #888888;
+  color: #888888;
   margin: 100px 0 -20px 0;
   font-size: 25px;
   font-weight: bold;
@@ -24,8 +24,8 @@
   transition: 0.2s;
 }
 .button:hover {
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid #333333;
+  color: #333333;
   background-color: #f4ece6;
 }
 
@@ -63,16 +63,26 @@
   margin-bottom: -5px;
   font-size: 20px;
   font-weight: bold;
-  color: #000;
+  color: #333333;
 }
 .cards h1 {
   font-size: 30px;
   font-weight: bolder;
-  color: #000;
+  color: #333333;
 }
 
 .resume-info {
+  font-size: 15px;
+  margin-bottom: -15px;
+  font-weight: 600;
+  color: #333;
   font-size: 20px;
+}
+.project-info {
+  font-size: 15px;
+  margin-bottom: -15px;
+  font-weight: 600;
+  color: #777;
 }
 .gittigidiyor {
   height: 50px;
@@ -88,4 +98,46 @@
 }
 .vut {
   height: 100px;
+}
+
+.card-project-link .fa-github {
+  color: #888888a4;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+
+.card-project-link .fa-github:hover {
+  color: #333333;
+}
+
+.project-names {
+  border-left: 10px solid red;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #000;
+}
+
+.ty-lang {
+  position: relative;
+  bottom: -50%;
+}
+.pfr-lang {
+  position: relative;
+  bottom: -39%;
+}
+.ttt-lang {
+  position: relative;
+  bottom: -45%;
+}
+.pf-lang {
+  position: relative;
+  bottom: -45%;
+}
+.jae-lang {
+  position: relative;
+  bottom: -45%;
+}
+.mgc-lang {
+  position: relative;
+  bottom: -34%;
 }

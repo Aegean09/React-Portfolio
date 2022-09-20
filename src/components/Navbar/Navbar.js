@@ -6,40 +6,39 @@ class Navbar extends Component {
   state = {
     clicked: false,
   };
-  
+
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
-  
+
   handleItemClass = (item) => {
     return item.classNot;
   };
 
   scrollToAbout = () => {
     const element = document.querySelector(".about");
-    if(element){
-        element.scrollIntoView({
-            behavior:"smooth",
-        })
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
   scrollToResume = () => {
     const element = document.querySelector(".resume");
-    if(element){
-        element.scrollIntoView({
-            behavior:"smooth",
-        })
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
   scrollToProje = () => {
     const element = document.querySelector(".proje");
-    if(element){
-        element.scrollIntoView({
-            behavior:"smooth",
-        })
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
-
 
   render() {
     return (
@@ -56,13 +55,17 @@ class Navbar extends Component {
               <li className="navbar-buttons" key={idx}>
                 <div
                   className={
-                    this.state.clicked ? item.classN : this.handleItemClass(item.id)
+                    this.state.clicked
+                      ? item.classN
+                      : this.handleItemClass(item.id)
                   }
                   onClick={
-                    item.id === "about" ? this.scrollToAbout :
-                    item.id === "resume" ? this.scrollToResume :
-                    this.scrollToProje
-                }
+                    item.id === "about"
+                      ? this.scrollToAbout
+                      : item.id === "resume"
+                      ? this.scrollToResume
+                      : this.scrollToProje
+                  }
                 >
                   {item.title}
                 </div>

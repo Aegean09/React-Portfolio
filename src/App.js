@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Footbar from "./components/Footbar/Footbar";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./Pages/About/About";
 import Proje from "./Pages/Proje/Proje";
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Resume />
       <Proje />
+      <Footbar className="footbar-t" />
     </div>
   );
 }

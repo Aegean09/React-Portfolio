@@ -1,0 +1,50 @@
+.footbar {
+  bottom: 0;
+  margin: 0 0 0 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10010;
+  background: white;
+  height: 80px;
+  border-bottom: 10px;
+  box-shadow: 0 1px 10px 0px #88888839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footbar-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footbar-left {
+    font-size: 0.7rem;
+    margin: auto 0;
+  color: #333333;
+  justify-self: start;
+  margin-left: 20px;
+}
+
+.footbar-right {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+}
+
+.footbar-contacts {
+    font-size: 1.2rem;
+    margin: auto;
+    color: #333333;
+    padding: 0.5rem 1rem;
+  }
+
+.footbar-contacts.fa {
+    margin: auto -25px;
+    color: #333333;
+  }
+

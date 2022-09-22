@@ -47,10 +47,6 @@
 .card-left {
   padding: 40px 40px 0 40px;
 }
-.card-right {
-  padding: 40px 40px 0 40px;
-  border-left: 2px dotted #c60021;
-}
 
 .cards h3 {
   font-size: 15px;
@@ -84,20 +80,27 @@
   font-weight: 600;
   color: #777;
 }
-.gittigidiyor {
-  height: 50px;
+
+.resume-logos {
+  width: 45%;
 }
-.trendyol {
-  height: 50px;
+
+.resume-logo-container {
+  width: 100%;
 }
-.kariyernet {
-  height: 50px;
+
+.card-right {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border-left: 2px dotted #c60021;
 }
-.ytu {
-  height: 150px;
+.proje-logos {
+  width: 100%;
 }
-.vut {
-  height: 100px;
+.proje-logo-container {
+  width: 100%;
 }
 
 .card-project-link .fa-github {

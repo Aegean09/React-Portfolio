@@ -4,11 +4,7 @@ import "./Card.css";
 const handleProjectLink = (prop) => {
   return (
     <div className="card-project-link">
-      <a
-        href={prop.githubLink}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={prop.githubLink} target="_blank" rel="noreferrer">
         <i className="fab fa-github"></i>
       </a>
     </div>
@@ -36,11 +32,13 @@ const Card = (props) => {
                 </div>
                 <div className="card-right">
                   <p className="resume-info">{item.description}</p>
-                  <img
-                    className={item.class}
-                    src="../file/images/ty.png"
-                    alt={item.company}
-                  ></img>
+                  <div className="resume-logo-container">
+                    <img
+                      className={item.class + " resume-logos"}
+                      src={item.logo}
+                      alt={item.company}
+                    ></img>
+                  </div>
                 </div>
               </div>
             );
@@ -60,14 +58,16 @@ const Card = (props) => {
                   <h1 className="project-names">{item.projectName}</h1>
                   <p className="project-info">{item.description}</p>
                   <h3 className={item.techClass}>{item.technologies}</h3>
+                  {item.githubLink !== "" ? handleProjectLink(item) : <></>}
                 </div>
                 <div className="card-right">
-                {item.githubLink !== "" ? handleProjectLink(item) : <></>}
-                  <img
-                    className={item.class}
-                    src="../file/images/ty.png"
-                    alt={item.company}
-                  ></img>
+                  <div className="proje-logo-container">
+                    <img
+                      className={item.class + " proje-logos"}
+                      src={item.logo}
+                      alt={item.company}
+                    />
+                  </div>
                 </div>
               </div>
             );
@@ -77,18 +77,5 @@ const Card = (props) => {
     );
   }
 };
-
-//                 <div class="projects-cards">
-//                     <div class="col-md-7 left">
-//                         <h1>Portfolio <a id="website"href="https://ege-durmaz-portfolio.web.app/" target="_blank">Visit Now</a></h1>
-//                         <h3>My own portfolio page that I made during internship with GittiGidiyor. Hosting it via Firebase Hosting</h3>
-//                         <h3 id="port-lang">HTML CSS BOOTSTRAP JAVASCRIPT</h3>
-//                         <a href="https://github.com/Aegean09/Portfolio-2"><img id="port-git" src="../file/images/icons/github-sign.svg" alt="GitHub"></a>
-//                     </div>
-//                     <div class="col-md-5 right">
-//                        <img id="portfolio" class="project-logos" src="../file/images/E.svg" alt="">
-//                     </div>
-//                 </div>
-//             </div>
 
 export default Card;

@@ -10,6 +10,15 @@ const handleProjectLink = (prop) => {
     </div>
   );
 };
+const handleCVLink = () => {
+  return (
+    <div className="cv-link">
+      <a className="cv-resume" href="pages/resume.html">
+          Download CV
+        </a>
+    </div>
+  );
+};
 
 const Card = (props) => {
   if (Object.values(props)[0][0].section === "resume") {
@@ -21,6 +30,10 @@ const Card = (props) => {
               ? "Experience"
               : "Education"}
           </h2>
+          <>
+          {Object.values(props)[0][0].type === "Experience"
+              ? handleCVLink() : <></>}
+          </>
           {Object.values(props)[0].map((item, idx) => {
             return (
               <div key={idx} className="cards">

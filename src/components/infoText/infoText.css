@@ -25,7 +25,10 @@
   font-weight: bold;
   font-size: 40px;
 }
-.info a {
+.cv-link{
+  margin: 111px 0 -20px 0;
+}
+.cv-link a {
   margin: 0 0 3% 0;
   justify-self: center;
   background-color: #c60021;
@@ -39,7 +42,7 @@
   text-decoration: none;
   transition: 0.2s;
 }
-.info a:hover {
+.cv-link  a:hover {
   color: #000;
   background-color: #fff;
   border: 2px solid #000;

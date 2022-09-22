@@ -7,7 +7,7 @@ body {
   margin: 0;
   height: 100%;
   font-weight: 100;
-  background: radial-gradient(#e6dace,#333333);
+  background: radial-gradient(#fff,#fff);
   -webkit-animation: fadeIn 1 1s ease-out;
   -moz-animation: fadeIn 1 1s ease-out;
   -o-animation: fadeIn 1 1s ease-out;

@@ -26,7 +26,7 @@ export const educationItems = [
       location: "Brno-Czech Republic",
       logo: vutLogo,
       description:
-        "VUT/BUT was the university I was studying in during my Erasmus. They introduced me to Java, Algorithms and HTML/CSS. We were a team of 4, they gave us a project for whole semester which I took responsibility of leadership.",
+        "VUT/BUT was the university I was studying in during my Erasmus. They introduced me to Java, Algorithms and HTML/CSS. We were a team of 4 on a website project for 6 months",
     },
   ];
   

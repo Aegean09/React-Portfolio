@@ -82,10 +82,16 @@
 }
 
 .resume-logos {
+  width: 100%;
+}
+
+.ytu{
   width: 45%;
 }
 
 .resume-logo-container {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -93,10 +99,11 @@
   flex-wrap: wrap;
   display: flex;
   align-items: center;
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   border-left: 2px dotted #c60021;
 }
 .proje-logos {
+  padding-bottom: 40px;
   width: 100%;
 }
 .proje-logo-container {

@@ -8,3 +8,8 @@
     color: #333333;
     flex-wrap: wrap;
 }
+@media screen and (max-width: 960px) {
+    .maintenance{
+        font-size: 2rem;
+    }
+}

@@ -11,10 +11,6 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked });
   };
 
-  handleItemClass = (item) => {
-    return item.classNot;
-  };
-
   scrollToAbout = () => {
     const element = document.querySelector(".about");
     if (element) {
@@ -54,11 +50,7 @@ class Navbar extends Component {
             return (
               <li className="navbar-buttons" key={idx}>
                 <div
-                  className={
-                    this.state.clicked
-                      ? item.classN
-                      : this.handleItemClass(item.id)
-                  }
+                  className={item.classN}
                   onClick={
                     item.id === "about"
                       ? this.scrollToAbout

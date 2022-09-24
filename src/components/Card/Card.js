@@ -1,4 +1,5 @@
 import React from "react";
+import CV from "../../Ege_Durmaz_CV.pdf"
 import "./Card.css";
 
 const handleProjectLink = (prop) => {
@@ -13,7 +14,7 @@ const handleProjectLink = (prop) => {
 const handleCVLink = () => {
   return (
     <div className="cv-link">
-      <a className="cv-resume" href="pages/resume.html">
+      <a className="cv-resume" target="_blank" href={CV} rel="noreferrer">
           Download CV
         </a>
     </div>

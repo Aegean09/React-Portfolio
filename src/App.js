@@ -5,10 +5,13 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./Pages/About/About";
 import Proje from "./Pages/Proje/Proje";
 import Resume from "./Pages/Resume/Resume";
+import Maintenance from "./Pages/Maintenance/maintenance"
 
 function App() {
   return (
+    
     <div className="App">
+      
       <div className="light x1"></div>
       <div className="light x2"></div>
       <div className="light x3"></div>
@@ -19,9 +22,10 @@ function App() {
       <div className="light x8"></div>
       <div className="light x9"></div>
       <Navbar className="navbar-t" />
-      <About />
+      <Maintenance />
+      {/* <About />
       <Resume />
-      <Proje />
+      <Proje /> */}
       <Footbar className="footbar-t" />
     </div>
   );

@@ -22,10 +22,10 @@ function App() {
       <div className="light x8"></div>
       <div className="light x9"></div>
       <Navbar className="navbar-t" />
-      <Maintenance />
-      {/* <About />
+      {/* <Maintenance /> */}
+      <About />
       <Resume />
-      <Proje /> */}
+      <Proje />
       <Footbar className="footbar-t" />
     </div>
   );

@@ -85,7 +85,7 @@
   width: 100%;
 }
 
-.ytu{
+.ytu {
   width: 45%;
 }
 
@@ -152,7 +152,7 @@
   bottom: -34%;
 }
 
-.cv-link{
+.cv-link {
   margin: 111px 0 -20px 0;
 }
 .cv-link a {
@@ -169,8 +169,62 @@
   text-decoration: none;
   transition: 0.2s;
 }
-.cv-link  a:hover {
+.cv-link a:hover {
   color: #000;
   background-color: #fff;
   border: 2px solid #000;
+}
+
+@media screen and (max-width: 960px) {
+  .section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .cards {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-left {
+    padding: 20px 20px 0 20px;
+  }
+
+  .cards h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    border-bottom: 1px solid #333;
+  }
+
+  .cards h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .cards h3 {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .card-right {
+    border-left: 0;
+    padding: 20px 20px 0 20px;
+  }
+
+  .card-right p {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .ytu {
+    width: 35%;
+  }
+
+  .erasmus{
+    width: 64%;
+  }
 }

@@ -176,7 +176,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .section{
+  .section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -219,12 +219,43 @@
     text-align: center;
     font-size: 12px;
   }
-  
+
   .ytu {
     width: 35%;
   }
 
-  .erasmus{
+  .erasmus {
     width: 64%;
+  }
+
+  .proje .card-right {
+    padding: 0;
+  }
+
+  .proje .cards h1 {
+    text-align: start;
+    border-bottom: 0;
+  }
+
+  .proje .project-info {
+    font-size: 12px;
+  }
+  .proje-logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  .proje .proje-logos {
+    width: 60%;
+    padding: 0;
+  }
+  .cards h3 {
+    display: none;
+  }
+  .card-project-link .fa-github {
+    text-align: center;
+    width: 100%;
+    color: #888888a4;
+    font-size: 2rem;
+    transition: 0.2s;
   }
 }

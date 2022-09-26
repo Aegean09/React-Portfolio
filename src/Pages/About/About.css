@@ -11,3 +11,8 @@
 .info-card {
   justify-content: end;
 }
+@media screen and (max-width: 960px) {
+  .about{
+    flex-wrap: wrap;
+  }
+}

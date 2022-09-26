@@ -27,7 +27,7 @@ class infoText extends Component {
         <div className="info-resume" onClick={this.scrollToResume}>
           Resume
         </div>
-        <div className="info-resume" onClick={this.scrollToProje}>
+        <div className="info-proje" onClick={this.scrollToProje}>
           Projects
         </div>
         <p>

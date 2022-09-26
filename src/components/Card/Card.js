@@ -61,6 +61,7 @@ const Card = (props) => {
       </div>
     );
   }
+  
   if (Object.values(props)[0][0].section === "proje") {
     return (
       <div className="container">

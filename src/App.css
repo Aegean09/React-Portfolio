@@ -22,8 +22,8 @@ body {
   background-color: white;
   box-shadow: red 0px 0px 20px 2px;
   opacity: 0;
-  top: 100vh;
-  bottom: 0px;
+  top: 100%;
+  bottom: -100%;
   left: 0px;
   right: 0px;
   margin: auto;
@@ -73,7 +73,7 @@ animation: floatUp 4.5s infinite linear;
 -moz-transform: scale(1.2);
 -o-transform: scale(1.2);
 transform: scale(1.2);
-left: -34%;
+left: -45%;
 }
 
 .x5{
@@ -112,6 +112,18 @@ transform: scale(3.2);
 left: 37%;
 }
 
+.x71{
+-webkit-animation: floatUp 5.3s infinite linear;
+-moz-animation: floatUp 5.3s infinite linear;
+-o-animation: floatUp 5.3s infinite linear;
+animation: floatUp 5.3s infinite linear;
+-webkit-transform: scale(3.2);
+-moz-transform: scale(3.2);
+-o-transform: scale(3.2);
+transform: scale(3.2);
+left: -37%;
+}
+
 .x8{
 -webkit-animation: floatUp 4.7s infinite linear;
 -moz-animation: floatUp 4.7s infinite linear;
@@ -137,32 +149,32 @@ left: 85%;
 }
 
 @-webkit-keyframes floatUp{
-0%{top: 100vh; opacity: 0;}
+0%{top: 200%; opacity: 0;}
 25%{opacity: 1;}
-50%{top: 0vh; opacity: .8;}
+50%{top: 0%; opacity: .8;}
 75%{opacity: 1;}
-100%{top: -100vh; opacity: 0;}
+100%{top: -100%; opacity: 0;}
 }
 @-moz-keyframes floatUp{
-0%{top: 100vh; opacity: 0;}
+0%{top: 100%; opacity: 0;}
 25%{opacity: 1;}
-50%{top: 0vh; opacity: .8;}
+50%{top: 0%; opacity: .8;}
 75%{opacity: 1;}
-100%{top: -100vh; opacity: 0;}
+100%{top: -100%; opacity: 0;}
 }
 @-o-keyframes floatUp{
-0%{top: 100vh; opacity: 0;}
+0%{top: 100%; opacity: 0;}
 25%{opacity: 1;}
-50%{top: 0vh; opacity: .8;}
+50%{top: 0%; opacity: .8;}
 75%{opacity: 1;}
-100%{top: -100vh; opacity: 0;}
+100%{top: -100%; opacity: 0;}
 }
 @keyframes floatUp{
-0%{top: 100vh; opacity: 0;}
+0%{top: 100%; opacity: 0;}
 25%{opacity: 1;}
-50%{top: 0vh; opacity: .8;}
+50%{top: 0%; opacity: .8;}
 75%{opacity: 1;}
-100%{top: -100vh; opacity: 0;}
+100%{top: -100%; opacity: 0;}
 }
 
 @-webkit-keyframes fadeIn{

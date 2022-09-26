@@ -19,6 +19,7 @@ function App() {
       <div className="light x5"></div>
       <div className="light x6"></div>
       <div className="light x7"></div>
+      <div className="light x71"></div>
       <div className="light x8"></div>
       <div className="light x9"></div>
       <Navbar className="navbar-t" />

@@ -252,6 +252,7 @@
     display: none;
   }
   .card-project-link .fa-github {
+    display: none; /* TEMP */
     text-align: center;
     width: 100%;
     color: #888888a4;

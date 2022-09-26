@@ -10,9 +10,9 @@ const Footbar = (props) => {
         </div>
         <div className="footbar-right">
           <div className="footbar-contacts fa fa-phone"></div>
-          <h1 className="footbar-contacts">+90 543 124 2550</h1>
+          <h1 className="footbar-contacts phone">+90 543 124 2550</h1>
           <div className="footbar-contacts fa fa-envelope"></div>
-          <h1 className="footbar-contacts">ege_durmaz09@hotmail.com</h1>
+          <h1 className="footbar-contacts email">ege_durmaz09@hotmail.com</h1>
         </div>
       </div>
     </nav>

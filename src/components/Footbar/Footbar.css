@@ -51,10 +51,28 @@
 @media screen and (max-width: 960px) {
 
   .footbar-contacts {
+    width: 100%;
+    text-align: end;
     padding: 0;
     font-size: 0.7rem;
   }
+  .footbar-contacts.fa {
+    margin: 0;
+  }
   .footbar-left {
     font-size: 0.4rem;
+  }
+  .footbar-right{
+    justify-content: end;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .footbar-right .fa-envelope{
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .footbar-right .email{
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
 }

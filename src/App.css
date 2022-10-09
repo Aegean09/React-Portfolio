@@ -252,3 +252,9 @@ to{opacity: 1;}
 80%{opacity: .9;}
 100%{opacity: 1;}
 }
+
+@media screen and (max-width: 960px) {
+  .x2,.x3,.x5,.x71,.x8{
+    display: none;
+  }
+}

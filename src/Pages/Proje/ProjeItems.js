@@ -1,7 +1,7 @@
 import tyLogo from '../../img/ty.png';
 import pfrLogo from '../../img/Ege.jpg';
 import tttLogo from '../../img/ttt.png';
-import pfLogo from '../../img/Ege.jpg';
+import pfLogo from '../../img/OldEge.jpg';
 import jaeLogo from '../../img/JAE.png';
 import mgcLogo from '../../img/DL.png';
 

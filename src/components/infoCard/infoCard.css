@@ -18,8 +18,11 @@
 }
 
 .ege {
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
   margin-top: 50px;
-  height: 250px;
+  height: 275px;
   width: 250px;
 }
 

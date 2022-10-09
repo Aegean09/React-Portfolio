@@ -81,6 +81,16 @@
   color: #777;
 }
 
+.pfr-project{
+  margin-top: -40px;
+  padding-bottom: 0px !important;
+  border-radius: 50%;
+}
+.pf-project{
+  padding-bottom: 0;
+  border-radius: 0;
+}
+
 .resume-logos {
   width: 100%;
 }
